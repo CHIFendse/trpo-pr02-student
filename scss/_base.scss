@@ -1,0 +1,42 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: $color-text;
+    background-color: $color-background;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    @include focus-ring;
+}
+
+.container {
+    @include container;
+}
+
+.page-title {
+    margin: space(2) 0 space(1.5);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}

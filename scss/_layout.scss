@@ -1,0 +1,77 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.header {
+    background-color: $color-dark;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: $space;
+        padding-bottom: $space;
+    }
+
+    &__logo {
+        color: $color-surface;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    &__nav {
+        display: flex;
+        gap: $space;
+    }
+
+    &__link {
+        color: $color-surface;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: space(1.5);
+    align-items: start;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $space;
+}
+
+.footer {
+    margin-top: space(3);
+    padding: space(0.5) 0;
+    background-color: $color-dark;
+    color: $color-surface;
+    text-align: center;
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .header__inner {
+        flex-direction: column;
+        gap: space(0.5);
+    }
+
+    .catalog {
+        grid-template-columns: 1fr;
+    }
+}
