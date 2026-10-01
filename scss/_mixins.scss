@@ -1,0 +1,16 @@
+@use "variables" as *;
+
+@function space($count) {
+    @return $space * $count;
+}
+
+@mixin container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 $space;
+}
+
+@mixin focus-ring {
+    outline: 3px solid $color-accent;
+    outline-offset: 2px;
+}
