@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="header">
+    <b>Учебный магазин</b>
+    <nav>
+        <a href="#catalog">Каталог</a>
+        <a href="#info">О каталоге</a>
+    </nav>
+</header>
+
+<main class="container">
+    <h1>Каталог</h1>
+
+    <div class="layout">
+        <aside class="filters">
+            <h2>Фильтры</h2>
+            <p>
+                <label for="category">Категория</label><br>
+                <select id="category">
+                    <option>Все</option>
+                    <option>Книги</option>
+                    <option>Курсы</option>
+                    <option>Инструменты</option>
+                </select>
+            </p>
+            <p>
+                <label for="price">Цена до</label><br>
+                <input type="number" id="price" min="575" max="1510">
+            </p>
+            <button class="button">Применить</button>
+        </aside>
+
+        <section id="catalog" class="catalog">
+            <article class="card">
+                <img src="images/product-01.svg" alt="Учебный товар 1">
+                <span class="badge">Книги</span>
+                <h3>Учебный товар 1</h3>
+                <p>Рейтинг: 4.0</p>
+                <p class="price">575 ₽</p>
+                <button class="button">В корзину</button>
+            </article>
+            <article class="card">
+                <img src="images/product-02.svg" alt="Учебный товар 2">
+                <span class="badge">Курсы</span>
+                <h3>Учебный товар 2</h3>
+                <p>Рейтинг: 4.2</p>
+                <p class="price">660 ₽</p>
+                <button class="button">В корзину</button>
+            </article>
+            <article class="card">
+                <img src="images/product-03.svg" alt="Учебный товар 3">
+                <span class="badge">Инструменты</span>
+                <h3>Учебный товар 3</h3>
+                <p>Рейтинг: 4.4</p>
+                <p class="price">745 ₽</p>
+                <button class="button">В корзину</button>
+            </article>
+            <article class="card">
+                <img src="images/product-01.svg" alt="Учебный товар 4">
+                <span class="badge">Книги</span>
+                <h3>Учебный товар 4</h3>
+                <p>Рейтинг: 4.6</p>
+                <p class="price">830 ₽</p>
+                <button class="button">В корзину</button>
+            </article>
+            <article class="card">
+                <img src="images/product-02.svg" alt="Учебный товар 5">
+                <span class="badge">Курсы</span>
+                <h3>Учебный товар 5</h3>
+                <p>Рейтинг: 4.8</p>
+                <p class="price">915 ₽</p>
+                <button class="button">В корзину</button>
+            </article>
+            <article class="card">
+                <img src="images/product-03.svg" alt="Учебный товар 6">
+                <span class="badge">Инструменты</span>
+                <h3>Учебный товар 6</h3>
+                <p>Рейтинг: 3.8</p>
+                <p class="price">1000 ₽</p>
+                <button class="button">В корзину</button>
+            </article>
+            <article class="card">
+                <img src="images/product-01.svg" alt="Учебный товар 7">
+                <span class="badge">Книги</span>
+                <h3>Учебный товар 7</h3>
+                <p>Рейтинг: 4.0</p>
+                <p class="price">1085 ₽</p>
+                <button class="button">В корзину</button>
+            </article>
+            <article class="card">
+                <img src="images/product-02.svg" alt="Учебный товар 8">
+                <span class="badge">Курсы</span>
+                <h3>Учебный товар 8</h3>
+                <p>Рейтинг: 4.2</p>
+                <p class="price">1170 ₽</p>
+                <button class="button">В корзину</button>
+            </article>
+            <article class="card">
+                <img src="images/product-03.svg" alt="Учебный товар 9">
+                <span class="badge">Инструменты</span>
+                <h3>Учебный товар 9</h3>
+                <p>Рейтинг: 4.4</p>
+                <p class="price">1255 ₽</p>
+                <button class="button">В корзину</button>
+            </article>
+            <article class="card">
+                <img src="images/product-01.svg" alt="Учебный товар 10">
+                <span class="badge">Книги</span>
+                <h3>Учебный товар 10</h3>
+                <p>Рейтинг: 4.6</p>
+                <p class="price">1340 ₽</p>
+                <button class="button">В корзину</button>
+            </article>
+            <article class="card">
+                <img src="images/product-02.svg" alt="Учебный товар 11">
+                <span class="badge">Курсы</span>
+                <h3>Учебный товар 11</h3>
+                <p>Рейтинг: 4.8</p>
+                <p class="price">1425 ₽</p>
+                <button class="button">В корзину</button>
+            </article>
+            <article class="card">
+                <img src="images/product-03.svg" alt="Учебный товар 12">
+                <span class="badge">Инструменты</span>
+                <h3>Учебный товар 12</h3>
+                <p>Рейтинг: 3.8</p>
+                <p class="price">1510 ₽</p>
+                <button class="button">В корзину</button>
+            </article>
+        </section>
+    </div>
+
+    <section id="info" class="info">
+        <h2>О каталоге</h2>
+        <p>12 товаров, 3 категории, цены от 575 до 1510 ₽.</p>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>Учебный магазин, 2026</p>
+</footer>
+</body>
+</html>
