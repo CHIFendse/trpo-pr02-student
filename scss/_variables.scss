@@ -1,0 +1,16 @@
+$accent: #315efb;
+$surface: #ffffff;
+$background: #f5f7fb;
+$text: #1f2937;
+$dark: #111827;
+
+$radius: 14px;
+$space: 16px;
+$container-width: 1100px;
+
+$tablet: 768px;
+$mobile: 480px;
+
+@function space($count) {
+    @return $space * $count;
+}

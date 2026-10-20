@@ -1,0 +1,41 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.button {
+    padding: space(0.5) $space;
+    border: none;
+    border-radius: $radius;
+    background: $accent;
+    color: $surface;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.badge {
+    color: $accent;
+    font-size: 14px;
+}
+
+.card {
+    @include box;
+
+    h3 {
+        margin: space(0.5) 0;
+    }
+
+    .price {
+        font-weight: bold;
+    }
+}
+
+.filters {
+    @include box;
+}
+
+.info {
+    @include box;
+    margin-top: space(2);
+}

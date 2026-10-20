@@ -1,0 +1,55 @@
+@use "variables" as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: $space;
+    background: $dark;
+    color: $surface;
+
+    a {
+        color: $surface;
+        margin-left: $space;
+    }
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: space(1.5);
+    align-items: start;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $space;
+}
+
+.footer {
+    margin-top: space(2);
+    padding: space(0.5);
+    background: $dark;
+    color: $surface;
+    text-align: center;
+}
+
+@media (max-width: $tablet) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: $mobile) {
+    .header {
+        flex-direction: column;
+    }
+
+    .catalog {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,22 @@
+@use "variables" as *;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: $background;
+    color: $text;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 $space;
+}
